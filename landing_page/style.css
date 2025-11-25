@@ -4,12 +4,20 @@
     width: 100%;
 }
 
+/* Shared css */
+.top-section,
+.middle-section,
+.quote,
+.footer {
+    margin: 0 auto;
+    padding: 0.5rem 12rem;
+}
+
+/* Top section */
 .top-section {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    margin: 0 auto;
-    padding: 0.5rem 16rem;
     color: white;
 }
 
@@ -79,4 +87,98 @@ button {
 
 .hero-text p, .right-links {
     font-size: 18px;
+}
+
+/* Middle section */
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.middle-section .images {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    width: 240px;
+    height: 180px;
+    justify-items: center;
+    border: 5px solid #3882F6;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+/* Quote section */
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding-bottom: 4rem;
+}
+
+.quote .sub-quote {
+    width: 800px;
+    font-size: 36px;
+    font-weight: 300;
+    padding: 8rem auto;
+    justify-self: center;
+}
+
+.author {
+    justify-self: center;
+    padding-left: 20rem;
+}
+
+/* footer */
+.footer {
+    justify-self: center;
+    width: 600px;
+    height: 175px;
+    background-color: #3882F6;
+    margin: 3rem;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.footer h3 {
+    color: white;
+    margin: 10px 0px
+}
+
+.footer-container {
+    flex: 1 0.25 0;
+}
+
+.footer button {
+    width: 20%;
+    border: 3px solid white;
+    flex: 0 0 auto;
+    margin: auto;
+}
+
+/* real-footer */
+.real-footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: white;
+    padding: 2rem;
 }
